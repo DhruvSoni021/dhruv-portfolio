@@ -1,0 +1,9 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+html{scroll-behavior:smooth}
+body{@apply bg-ink text-slate-300 font-sans antialiased;
+background-image:radial-gradient(ellipse at 15% 0%,rgba(124,140,255,.12),transparent 50%),radial-gradient(ellipse at 90% 30%,rgba(167,139,250,.08),transparent 45%)}
+.glass{@apply bg-white/[0.03] border border-line backdrop-blur-sm rounded-xl}
+.btn{@apply inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold border border-line transition hover:border-accent}
+.btn-p{@apply bg-accent text-ink border-accent hover:bg-violet}
+section{scroll-margin-top:5rem}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
